@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP 
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    <title>Raspy LED Client</title>
+  </head>
+  <body>
+    <div class="slidecontainer">
+      <h2>Red value: <span id="redValue"></span> <h2>
+      <input type="range" min="0" max="255" value="50" class="slider" id="redSlider">
+      <h2>Green value: <span id="greenValue"></span> <h2></h2>
+      <input type="range" min="0" max="255" value="50" class="slider" id="greenSlider">
+      <h2>Blue value: <span id="blueValue"></span> <h2></h2>
+      <input type="range" min="0" max="255" value="50" class="slider" id="blueSlider">
+    </div>
+    <script src="../src/request.js"></script>
+  </body>
+</html>

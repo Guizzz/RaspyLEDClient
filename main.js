@@ -22,7 +22,7 @@ const createWindow = () => {
   mainWindow.loadFile('model/index.html')
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools()
+  //mainWindow.webContents.openDevTools()
 
 }
 

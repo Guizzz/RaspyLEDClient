@@ -5,17 +5,36 @@
     <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP 
     <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">-->
+    
     <title>Raspy LED Client</title>
+
+    <style>
+      input
+      {
+        width: 100%;
+      }
+    </style>
+
   </head>
   <body>
     <div class="slidecontainer">
-      <h2>Red value: <span id="redValue"></span> <h2>
-      <input type="range" min="0" max="255" value="50" class="slider" id="redSlider">
-      <h2>Green value: <span id="greenValue"></span> <h2></h2>
+      <h2>Red value: <span id="redValue"></span> </h2>
+      <input type="range" min="0" max="255" value="50" class="slider" id="redSlider" >
+      <h2>Green value: <span id="greenValue"></span></h2>
       <input type="range" min="0" max="255" value="50" class="slider" id="greenSlider">
-      <h2>Blue value: <span id="blueValue"></span> <h2></h2>
+      <h2>Blue value: <span id="blueValue"></span> </h2>
       <input type="range" min="0" max="255" value="50" class="slider" id="blueSlider">
+      <br>
+      <h2>Time value: <span id="timeValue"></span> </h2>
+      <input type="range" min="10" max="2000" value="50" class="slider" id="timeSlider">
+      <h2>Brightness value: <span id="brightnessValue"></span> </h2>
+      <input type="range" min="0" max="255" value="50" class="slider" id="brightnessSlider">
     </div>
+    <br>
+    <input type="button" id="startRainbow" value="Start Rainbow"></input>
+    <br><br>
+    <input type="button" id="stopRainbow" value="Stop Rainbow"></input>
+    <h3 id="response"><h3>
     <script src="../src/request.js"></script>
   </body>
 </html>
